@@ -1,10 +1,12 @@
 package main
 
 import (
-	"code.google.com/p/go-html-transform/h5"
+	"code.google.com/p/go.net/html"
 	"fmt"
+	"github.com/PuerkitoBio/goquery"
 	"io/ioutil"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -14,5 +16,7 @@ func main() {
 		fmt.Println(er)
 		return
 	}
-	fmt.Println(string(content))
+	rawdoc, _ := html.Parse(strings.NewReader(string(content)))
+	doc := goquery.NewDocumentFromNode(rawdoc)
+	fmt.Println(doc.Text())
 }
