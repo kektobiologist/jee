@@ -1,0 +1,131 @@
+.on {}
+.off {DISPLAY: none}
+.Banner_dateband {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #FFFFFF}
+.bodytext {font-family: serif;font-size: 14px;color: #000000;}
+.bodytextBold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000 ; font-weight: bold}
+.gadget_columnhead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: normal;
+background-color: #<table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" class="gadget_columnhead_selected">
+          <tr>
+            <td width="25%" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td width="25%" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table>; 	background-color: E0EDE6;
+}
+.LoginText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-align: justify}
+.LoginHead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #000000; font-weight: bold }
+.bodytextColored { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF}
+.table_colored {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #78A8A8}
+.gadget_columnhead_selected { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000 ; font-weight: normal; background-color: #<table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" class="gadget_columnhead_selected">
+          <tr>
+            <td width="25%" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td width="25%" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table>}
+.footer {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;background-color: #9DA6AB;color: #FFFFFF;}
+.TitleColored {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #3C3C6F;font-weight: bold;}
+.BorderColored {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000 ; font-weight: bold; background-color: #D7D7D7}
+.lightbluecolor {background-color: #0078A8;}
+.Bannerbigertext {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF}
+.table_body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #000000; background-color: #D7D7D7}
+.table_body_selected { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #000000; background-color: #FFFFFF}
+.table_header { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #000000; background-color: #78A8A8}
+.yellowbar {background-color: #F4F8B8;}.selectedfield {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFD9;
+}
+.textred {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF0000;
+	font-weight: normal;
+
+}
+.titlehead {
+	color: C94C14;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+
+}
+
+.bankstates {
+	color: FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.titlesubhead {
+	color: C94C14;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+
+}
+.bodytextWhite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	padding-left: 5px;
+}
+.bottom {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #4c629e;
+}
+.row1 {
+	background-color: #B3CCCC;
+}
+.row2 {
+	background-color: DDEEE4;
+}
+.row3 {
+	background-color: #E9E9E9;
+}
+.box {
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	height: 20px;
+}
+.tabs {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: normal;
+background-color: #<table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" class="gadget_columnhead_selected">
+          <tr>
+            <td width="25%" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td width="25%" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" class="gadget_columnhead">&nbsp;</td>
+            <td valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table>; 	background-color: #6AA5A5;
+}
