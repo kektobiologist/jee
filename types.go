@@ -15,7 +15,7 @@ var quotaMap = map[Quota]string{
 	GEN: "Your All India Rank is",
 	SC:  "Your Rank in the SC List is",
 	ST:  "Your Rank in the ST List is",
-	OBC: "Your Rank in the OBC List is",
+	OBC: "Your Rank in the OBC(NCL) List",
 	PD:  "Your Rank in the PD List is",
 }
 
@@ -157,11 +157,11 @@ var regionMap = map[int][]string{
 }
 
 type Student struct {
-	selected  bool
-	rollno    int
-	region    int
-	name      string
-	rank      int
-	quota     Quota
-	plaintext string
+	Selected  bool
+	Rollno    int
+	Region    int
+	Name      string
+	Rank      int
+	Q         Quota
+	Plaintext string
 }

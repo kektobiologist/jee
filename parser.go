@@ -2,7 +2,6 @@ package main
 
 import (
 	"code.google.com/p/go.net/html"
-	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"os"
 	"strconv"
@@ -47,39 +46,37 @@ func GetQuota(str string) Quota {
 	return DUNNO
 }
 
-func GetStudent(d *goquery.Document) (s Student, ok bool) {
+func GetStudent(d *goquery.Document, rollno int) (s Student, ok bool) {
 	//sanity on document
-	if v := d.Find(".titlehead").Children().Text(); v != "JEE (Advanced) - 2013 Result" {
-		return Student{}, false
-	}
+	// if v := d.Find(".titlehead").Children().Text(); v != "JEE (Advanced) - 2013 Result" {
+	// 	return Student{}, false
+	// }
 	dtext := strings.Trim(d.Text(), " ")
 	dfields := strings.Fields(dtext)
 	for _, v := range dfields {
-		s.plaintext += v + " "
+		s.Plaintext += v + " "
 	}
-	s.plaintext = strings.Trim(s.plaintext, " ")
+	s.Plaintext = strings.Trim(s.Plaintext, " ")
 	if isInvalid(dtext) {
 		return s, false
 	}
 	ok = true
+	s.Rollno = rollno
+	s.Region = s.Rollno / 10000
 	if !isSelected(dtext) {
 		return
 	}
-	s.selected = true
-	s.rank, _ = strconv.Atoi(d.Find(".style7").First().Text())
+	s.Selected = true
+	s.Rank, _ = strconv.Atoi(d.Find(".style7").First().Text())
 	text, _ := d.Find(".titlehead").First().Parent().Next().Children().Children().First().Html()
 	tokens := strings.Split(text, "<br/>")
 	nameToks := strings.Fields(tokens[1])
 	nameToks = nameToks[2:len(nameToks)]
 	for _, v := range nameToks {
-		s.name += v + " "
+		s.Name += v + " "
 	}
-	rollnoToks := strings.Fields(tokens[3])
-	s.rollno, _ = strconv.Atoi(rollnoToks[5])
-	s.region = s.rollno / 10000
-	s.name = strings.Trim(s.name, " ")
-	s.quota = GetQuota(dtext)
-	fmt.Println(strings.Trim(tokens[3], " "))
+	s.Name = strings.Trim(s.Name, " ")
+	s.Q = GetQuota(dtext)
 	return
 }
 
@@ -87,5 +84,5 @@ func GetStudent(d *goquery.Document) (s Student, ok bool) {
 // 	doc := LoadDoc("data/gen.html")
 // 	student, _ := GetStudent(doc)
 // 	fmt.Println(student)
-// 	fmt.Println(regionMap[student.region])
+// 	fmt.Println(regionMap[student.Region])
 // }
